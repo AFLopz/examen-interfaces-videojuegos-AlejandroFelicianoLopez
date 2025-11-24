@@ -1,8 +1,8 @@
-import { juegos } from "../public/data/info.js";
+import { juegos } from "../../public/data/info.js";
 
 
-export function getJuego(plataforma) {
-    return new Promise((resolve, reject) => {
+export function getJuegos(plataforma) {
+    return new Promise((resolve) => {
         setTimeout(() => {
             const juego = juegos.filter(j => j.plataforma === plataforma)
             resolve(juego);
