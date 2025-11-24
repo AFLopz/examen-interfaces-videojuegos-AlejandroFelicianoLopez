@@ -1,10 +1,10 @@
-import { valoraciones } from "../public/data/info.js";
+import { valoraciones } from "../../public/data/info.js";
 
 
 export function getValoracion(id) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            const valoracion = valoraciones.find(v => v.id === id)?.puntuacion
+            const valoracion = valoraciones.find(v => v.id === id)
             if (valoracion) {
                 resolve(valoracion);
             } else {
